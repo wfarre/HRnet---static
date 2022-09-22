@@ -1,4 +1,4 @@
-// import {employees} from "./data/employeedata.json"
+import {employees} from "./data/employeedata.json"
 
 
 async function fetchEmployees(){
@@ -15,16 +15,16 @@ async function fetchEmployees(){
       return {myEmployees}
 }
 
-const {e} = await fetchEmployees()
+const {e} = fetchEmployees()
 
 console.log(e);
 
-if(e){
+// if(e){
   $(  function() {
     // const employees = JSON.parse(localStorage.getItem('employees'));
     // const employees = await fetch("./data/employeedata.json").then(res => res.json()).then((data) => data)
 
-    const employees = e;
+    // const employees = e;
 
 
     $('#employee-table').DataTable({
@@ -42,4 +42,4 @@ if(e){
         ]
     });
 });
-}
+// }
