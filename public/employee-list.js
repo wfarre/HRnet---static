@@ -15,7 +15,7 @@ async function fetchEmployees(){
       return {myEmployees}
 }
 
-const {e} = fetchEmployees()
+const {e} = await fetchEmployees()
 
 console.log(e);
 
