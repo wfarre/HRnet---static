@@ -1,5 +1,9 @@
-$(function() {
+// import {employees} from "./data/employees.js"
+
+$(async function() {
     const employees = JSON.parse(localStorage.getItem('employees'));
+    // const employees = await fetch("./data/employeedata.json").then(res => res.json()).then((data) => data)
+
 
     $('#employee-table').DataTable({
         data: employees,

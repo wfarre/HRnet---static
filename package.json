@@ -1,0 +1,19 @@
+{
+  "name": "hrnet---static",
+  "version": "1.0.0",
+  "description": "Welcome to HRnet! This is our company's internal application to create and view employee records.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wfarre/HRnet---static.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wfarre/HRnet---static/issues"
+  },
+  "homepage": "https://github.com/wfarre/HRnet---static#readme"
+}
