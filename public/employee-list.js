@@ -6,7 +6,7 @@ async function fetchEmployees(){
       return res.json()
     }).then((data) => {
           console.log(data);
-          return data
+          return data.employees
         }).catch(error => {
             console.log(error)
           })
@@ -19,9 +19,11 @@ const {e} = fetchEmployees()
 
 console.log(e);
 
-$( function() {
-    const employees = JSON.parse(localStorage.getItem('employees'));
+$(  function() {
+    // const employees = JSON.parse(localStorage.getItem('employees'));
     // const employees = await fetch("./data/employeedata.json").then(res => res.json()).then((data) => data)
+
+    const employees = fetchEmployees;
 
 
     $('#employee-table').DataTable({
