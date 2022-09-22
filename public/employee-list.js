@@ -19,11 +19,12 @@ const {e} = fetchEmployees()
 
 console.log(e);
 
-$(  function() {
+if(e){
+  $(  function() {
     // const employees = JSON.parse(localStorage.getItem('employees'));
     // const employees = await fetch("./data/employeedata.json").then(res => res.json()).then((data) => data)
 
-    const employees = fetchEmployees();
+    const employees = e;
 
 
     $('#employee-table').DataTable({
@@ -41,3 +42,4 @@ $(  function() {
         ]
     });
 });
+}
