@@ -1,4 +1,5 @@
-[
+{
+"employees": [
   {
     "firstName": "Georges",
     "lastName": "Dupont",
@@ -450,4 +451,4 @@
     "state": "Alabama",
     "zipCode": "10000"
   }
-]
+]}

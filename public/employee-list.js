@@ -1,6 +1,25 @@
-// import {employees} from "./data/employees.js"
+// import {employees} from "./data/employeedata.json"
 
-$(async function() {
+
+async function fetchEmployees(){
+    let myEmployees = await fetch("./data/employeedata.json").then(res =>{
+      return res.json()
+    }).then((data) => {
+          console.log(data);
+          return data
+        }).catch(error => {
+            console.log(error)
+          })
+
+
+      return {myEmployees}
+}
+
+const {e} = fetchEmployees()
+
+console.log(e);
+
+$( function() {
     const employees = JSON.parse(localStorage.getItem('employees'));
     // const employees = await fetch("./data/employeedata.json").then(res => res.json()).then((data) => data)
 
